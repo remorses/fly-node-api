@@ -1,12 +1,13 @@
 {
     "name": "fly-node-api",
-    "version": "0.0.0",
+    "version": "0.1.0",
     "description": "Fly.io node api based on GraphQL",
     "main": "src/index.js",
     "module": "src/index.esm.js",
     "types": "src/index.d.ts",
     "files": [
-        "src"
+        "src",
+        "README.md"
     ],
     "scripts": {
         "generate": "genql  -o src -e https://api.fly.io/graphql --esm-and-cjs"
