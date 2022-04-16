@@ -4,6 +4,7 @@
     "description": "Fly.io node api based on GraphQL",
     "main": "src/index.js",
     "module": "src/index.esm.js",
+    "types": "src/index.d.ts",
     "files": [
         "src"
     ],
