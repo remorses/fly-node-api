@@ -7,17 +7,15 @@ const client = createClient({
     },
 })
 
-async function main() {
-    const res = await client.query({
-        app: [
-            { name: 'notaku-website-preview' },
-            {
-                secrets: { name: true },
-                status: true,
-            },
+async function addSecrets({ name: appName, secrets }) {
+    const { app } = await client.query({
+        app: [{ name: appName }, { id: true }],
+    })
+    const appId = app.id
+    await client.mutation({
+        setSecrets: [
+            { input: { appId, secrets: secrets, replaceAll: true } },
+            { app: { name: true }, release: { status: true } },
         ],
     })
-    console.log(res.app)
 }
-
-main()
