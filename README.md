@@ -1,6 +1,10 @@
-## Example
+## Install
 
-**Still unpublished, work in progress**
+```
+npm i fly-node-api
+```
+
+## Usage
 
 ```ts
 import 'dotenv/config'

@@ -1,7 +1,7 @@
 {
     "name": "fly-node-api",
-    "version": "1.0.0",
-    "description": "",
+    "version": "0.0.0",
+    "description": "Fly.io node api based on GraphQL",
     "main": "src/index.js",
     "module": "src/index.esm.js",
     "files": [
@@ -22,6 +22,7 @@
     },
     "homepage": "https://github.com/remorses/fly-node-api#readme",
     "devDependencies": {
+        "@changesets/cli": "^2.22.0",
         "@genql/cli": "^2.10.0"
     },
     "dependencies": {
