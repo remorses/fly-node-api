@@ -1,0 +1,27 @@
+{
+  "name": "fly-node-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "generate": "genql  -o src -e https://api.fly.io/graphql --esm-and-cjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/remorses/fly-node-api.git"
+  },
+  "keywords": [],
+  "author": "Tommaso De Rossi, morse <beats.by.morse@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/remorses/fly-node-api/issues"
+  },
+  "homepage": "https://github.com/remorses/fly-node-api#readme",
+  "devDependencies": {
+    "@genql/cli": "^2.10.0"
+  },
+  "dependencies": {
+    "@genql/runtime": "^2.10.0",
+    "dotenv": "^16.0.0"
+  }
+}
