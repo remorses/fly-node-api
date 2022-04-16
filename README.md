@@ -15,7 +15,7 @@ const client = createClient({
 async function main() {
     const res = await client.query({
         app: [
-            { name: 'notaku-website-preview' },
+            { name: 'my-app' },
             {
                 secrets: { name: true },
                 status: true,
